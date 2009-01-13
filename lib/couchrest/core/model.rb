@@ -439,7 +439,7 @@ module CouchRest
           design_doc['views'].each do |name, view|
             saved['views'][name] = view
           end
-          saved.database = database
+          self.design_doc = saved
           database.save(saved)
         else
           design_doc['_id'] = did
