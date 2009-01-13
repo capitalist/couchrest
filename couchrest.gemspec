@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = ">= 0"
   s.version = "0.12.0"
   s.files = ["LICENSE",
- "README.rdoc",
+ "README.md",
  "Rakefile",
  "THANKS",
  "bin/couchdir",

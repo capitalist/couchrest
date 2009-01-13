@@ -13,10 +13,10 @@ spec = Gem::Specification.new do |s|
   s.description = "CouchRest provides a simple interface on top of CouchDB's RESTful HTTP API, as well as including some utility scripts for managing views and attachments."
   s.has_rdoc = true
   s.authors = ["J. Chris Anderson"]
-  s.files = %w( LICENSE README.rdoc Rakefile THANKS ) + 
+  s.files = %w( LICENSE README.md Rakefile THANKS ) + 
     Dir["{bin,examples,lib,spec,utils}/**/*"] - 
     Dir["spec/tmp"]
-  s.extra_rdoc_files = %w( README.rdoc LICENSE THANKS )
+  s.extra_rdoc_files = %w( README.md LICENSE THANKS )
   s.require_path = "lib"
   s.bindir = 'bin'
   s.executables << 'couchdir'
@@ -74,9 +74,9 @@ end
 
 desc "Generate the rdoc"
 Rake::RDocTask.new do |rdoc|
-  files = ["README.rdoc", "LICENSE", "lib/**/*.rb"]
+  files = ["README.md", "LICENSE", "lib/**/*.rb"]
   rdoc.rdoc_files.add(files)
-  rdoc.main = "README.rdoc"
+  rdoc.main = "README.md"
   rdoc.title = "CouchRest: Ruby CouchDB, close to the metal"
 end
 
